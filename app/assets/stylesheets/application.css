@@ -1,0 +1,149 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+html, body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+}
+.container {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+.navbar {
+	z-index: 1;
+	position: fixed;
+	width: 600px;
+	height: 100px;
+}
+.nav-list {
+	list-style-type: none;
+}
+.nav-item {
+	float: left;
+	font-size: 2em;
+	margin: 20px;
+	font-family: 'Oswald', sans-serif;
+	color: #ffffff;
+}
+.social-buttons {
+	height: 115px;
+	width: 50px;
+	grid-column: 7;
+	grid-row: 1;
+	justify-self: end;
+	align-self: end;
+}
+.fab {
+	color: #DC1F29;
+}
+.nameplate {
+	display: grid;
+	grid-template-columns: 100px repeat(5, 1fr) 430px 100px;
+	grid-template-rows: 150px 1fr 1fr;
+ 	margin: 0;
+ 	height: 100%;
+ 	width: 100%;
+ 	text-align: center;
+}
+.name {
+	grid-column: 7;
+	grid-row: 1;
+	font-family: 'Oswald', sans-serif;
+	font-size: 4em;
+	margin: 0;
+  justify-self: start;
+  color: #ffffff;
+}
+.occupation {
+	align-self: end;
+	justify-self: start;
+	font-size: 2.5em;
+	color: #DC1F29;
+}
+.parallax { 
+  background-image: url("nike.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content-wrap {
+	display: grid;
+	grid-template-columns: 100px repeat(6, 1fr) 100px;
+	grid-template-rows: 150px 1fr 1fr;
+	height: 100%;
+	width: 100%;
+	background-color: #050200;
+	background-image: url("https://www.transparenttextures.com/patterns/dark-geometric.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.title {
+	grid-column: 7;
+	grid-row: 1;
+	font-family: 'Oswald', sans-serif;
+	font-size: 4em;
+	margin-top: 10px;
+  justify-self: start;
+  color: #DC1F29;
+}
+.card {
+	margin: 5px;
+	border-radius: 2px 2px 0px 0px;
+	height: 200px;
+	width: 350px;
+	background-color: white;
+}
+.card-body {
+	height: 100%;
+	width: 100%;
+}
+.card-footer {
+	height: 50px;
+	width: 100%;
+	border-radius: 0px 0px 2px 2px;
+	background-color: #efefef;
+}
+.description {
+	margin: 0 10px;
+	font-family: 'Oswald', sans-serif;
+}
+.quizem {
+	grid-column: 2 / span 2;
+	grid-row: 2;
+	background-image: url('quizem.jpg');
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.oh-app {
+	grid-column: 4 / span 2;
+	grid-row: 2;
+	background-image: url('oh_app.jpg');
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nautify {
+	grid-column: 6 / span 2;
+	grid-row: 2;
+	background-image: url('nautify_app.jpg');
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
